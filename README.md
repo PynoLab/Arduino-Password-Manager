@@ -1,37 +1,37 @@
-## **Descrizione del progetto**
+## **Project Description**
 
-Questo progetto consiste in un **Password Manager** sicuro, basato su **Arduino Micro**. Il dispositivo consente di archiviare e recuperare facilmente le password.
+This project is a secure **Password Manager** based on **Arduino Micro**. The device allows users to easily store and retrieve passwords.
 
-### **Componenti:**
+### **Components:**
 
-1. **Adattatore microSD**  
-2. **Keypad a 5 pulsanti**  
-3. **Display LCD**  
-
----
-
-## **Funzionamento**
-
-1. **Preparazione dei File**  
-   - L'utente crea file di testo sulla microSD per un servizio o un'applicazione, ognuno con la rispettiva password salvata.
-
-2. **Navigazione nel Menu**  
-   - L'utente può navigare nel menu attraverso il **keypad a 5 pulsanti**. Quando seleziona un file, Arduino invia la password corrispondente al dispositivo di destinazione come se fosse una tastiera.
+1. **microSD Adapter**  
+2. **5-Button Keypad**  
+3. **LCD Display**  
 
 ---
 
-## **Esempio di utilizzo**
+## **How It Works**
 
-1. Creare 3 file sulla microSD chiamati: `Insta`, `Mail`, `TikTok`.  
-2. In ogni file, salvare la relativa password
+1. **File Preparation**  
+   - Users create text files on the microSD card, each representing a service or application, with the corresponding password saved inside.
 
-3. Quando è necessario inserire una password (ad esempio, per accedere alla casella email), l'utente seleziona il file `Mail`. Arduino invierà automaticamente la password come se fosse digitata tramite una tastiera.
+2. **Menu Navigation**  
+   - Users can navigate the menu using the **5-button keypad**. When a file is selected, Arduino sends the corresponding password to the target device as if it were typed via a keyboard.
 
 ---
 
-## **Comodità e Sicurezza**
+## **Usage Example**
 
-- Questo dispositivo è estremamente comodo per memorizzare e utilizzare le password senza doverle ricordare o scrivere manualmente ogni volta.  
-- Non è necessario un software complesso o un'app per accedere alle password; basta connettere Arduino al computer e selezionare il file desiderato.  
-- Tutte le password sono memorizzate localmente sulla microSD e non sono accessibili da internet o da dispositivi esterni. Il dispositivo Arduino invia i dati solo tramite la porta seriale, quindi non c'è rischio di accessi non autorizzati via rete.  
-- L'unico modo per accedere ai dati è rubare fisicamente il dispositivo.  
+1. Create 3 files on the microSD named: `Insta`, `Mail`, `TikTok`.  
+2. Save the respective password inside each file.  
+
+3. When a password is needed (e.g., to log in to an email account), the user selects the `Mail` file. Arduino automatically sends the password as if it were typed via a keyboard.
+
+---
+
+## **Convenience and Security**
+
+- This device is extremely convenient for storing and using passwords without needing to remember or manually type them each time.  
+- No complex software or app is required to access passwords; simply connect Arduino to the computer and select the desired file.  
+- All passwords are stored locally on the microSD card and are not accessible via the internet or external devices. The Arduino only sends data through the serial port, ensuring no risk of unauthorized network access.  
+- The only way to access the data is to physically steal the device.  
